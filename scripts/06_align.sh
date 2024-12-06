@@ -43,6 +43,9 @@ src=$PWD
 #mkdir $src/genome
 mkdir $src/aligned
 
+# Index the reference genome
+bwa index $src/genome/$parameterG
+
 # align paired reads using bwa mem and output as bam file using samtools
 for f in $src/trim/*_trimmed_paired_R1.fastq.gz;
 do 		FBASE=$(basename $f)
