@@ -45,6 +45,3 @@ cd $src/genome
 
 ### download genome
 wget $parameterW
-
-### index genome
-bwa index $parameterG
